@@ -1,0 +1,17 @@
+
+// *----------------------------
+//	Images
+// ----------------------------*
+@for $i from 1 through 11{
+    @if($i < 10){
+        .button-0#{$i}{
+            @include imagePushGuide(guideline-button,"0#{$i}");
+        }
+    }
+
+    @else {
+        .button-#{$i}{
+            @include imagePushGuide(guideline-button,"#{$i}");
+        }
+    }
+}

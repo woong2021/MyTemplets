@@ -1,0 +1,58 @@
+<header id="gnbVertical" class="clear">
+    <h1><a href="" title="Logo">{ What to do!? }</a></h1>
+    <h2 class="hide">메인메뉴</h2>
+    <div class="right">
+        <nav class="gnb-vertical">
+            <ul>
+                <li>
+                    <a href="" title="Menu 1">Menu 1</a>
+                    <ul>
+                        <li><a href="" title="Sub Menu 1">Sub Menu 1</a></li>
+                        <li><a href="" title="Sub Menu 2">Sub Menu 2</a></li>
+                        <li><a href="" title="Sub Menu 3">Sub Menu 3</a></li>
+                        <li><a href="" title="Sub Menu 4">Sub Menu 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" title="Menu 2">Menu 2</a>
+                    <ul>
+                        <li><a href="" title="Sub Menu 1">Sub Menu 1</a></li>
+                        <li><a href="" title="Sub Menu 2">Sub Menu 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" title="Menu 3">Menu 3</a>
+                    <ul>
+                        <li><a href="" title="Sub Menu 1">Sub Menu 1</a></li>
+                        <li><a href="" title="News&Notice">News&amp;Notice</a></li>
+                        <li><a href="" title="Sub Menu 3">Sub Menu 3</a></li>
+                        <li><a href="" title="Sub Menu 4">Sub Menu 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" title="Menu 4">Menu 4</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="util">
+            <a href="" title="">고객지원센터</a>
+            <a href="" title=""><span class="hide">English Site</span>EN</a>
+            <button><span class="hide">전체메뉴보기</span></button>
+        </div>
+    </div>
+</header>
+<script>
+    // 하위메뉴 세로형
+    $('.gnb-vertical li').on('mouseover focusin', function(){
+        $(this).siblings().children('ul').stop().slideUp(200);
+        $(this).children('ul').stop().slideDown(300);
+    });
+
+    $('.gnb-vertical li').on('mouseleave', function(){
+        $(this).children('ul').stop().slideUp(200);
+    });
+
+    $('.gnb-vertical li:last a').on('focusout', function(){
+        $(this).parent('ul').stop().slideUp(200);
+    });
+</script>

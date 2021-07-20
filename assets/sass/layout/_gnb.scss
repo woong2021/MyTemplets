@@ -1,0 +1,526 @@
+
+header{
+    &#thema4{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+    // 하위메뉴가 없는 GNB
+    #gnb{
+        position: relative;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        
+        h1{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            padding: 0 0 0 26px;
+            transform: translateY(-50%);
+        }
+
+        nav{
+            line-height: 100px;
+
+            ul{
+                text-align: center;
+                font-size: 0;
+
+                > li{
+                    display: inline-block;
+                    margin: 0;
+
+                    a{
+                        display: block;
+                        padding: 0 47.5px;
+                        color: $black;
+
+                        font : {
+                            size : 18px;
+                            weight: bold;
+                        }
+                        transition: color .3s .1s;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            z-index:  -1;
+                            height: 0;
+                            background-color: #65767d;
+                            transition: height .3s;
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                    }
+                }
+            }
+        }
+
+        .util{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            a{
+                position: relative;
+                display: inline-block;
+                padding: 0 18px;
+                line-height: 69px;
+                font-size: 12px;
+                color: #333;
+                vertical-align: middle;
+            }
+
+            button{
+                width: 60px;
+                height: 69px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    // 하위메뉴가 세로형인 GNB
+    #gnbVertical{
+        width: 1474px;
+        margin: 0 auto;
+        border-bottom: 0;
+        height: 65px;
+    
+        h1{ 
+            padding: 30px 0 0;
+            float: left;
+    
+            a{
+                display: block;
+                width: 200px;
+                height: 45px;
+            }
+        }
+    
+        .right{
+            margin: 0;
+            float: right;
+        }
+    
+        nav{
+            float: left;
+    
+            > ul {
+                > li {
+                    margin: 0;
+                    float: left;
+    
+                    &::before{
+                        content:"";
+                    }
+    
+                    a{
+                        display:block;
+                        position: relative;
+                        padding: 35px 12.5px 0;
+    
+                        font : {
+                            size: 18px;
+                            weight: bold;
+                        }
+    
+                        color: #000000;
+                        line-height: 28px;
+                        min-width: 125px;
+                        transition: color .3s .1s;
+    
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            z-index: -1;
+                            height: 0;
+                            background: #65767d;
+                            transition: height .3s;
+                        }
+                    }
+    
+                    &:hover{
+                        > a {
+                            color: $white;
+    
+                            &::before {
+                                height: 100%;
+                            }
+                        }
+                    }
+    
+                    > ul {
+                        display: none;
+                        position: absolute;
+                        padding: 21px 0;
+                        width: 150px;
+                        min-width: 126px;
+                        background: #65767d;
+    
+                        a{
+                            display: block;
+                            padding: 0 0 0 18px;
+                            font-size: 15px;
+                            color: #b2bbbe;
+                            line-height: 27px;
+                            transition: color .3s;
+    
+                            &:focus,
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    
+        .util{
+            margin: 0;
+            margin-left: 15px;
+            float: left;
+            font-size: 0;
+    
+            a,
+            button{
+                display: inline-block;
+                position: relative;
+                padding: 0 22px;
+                height: 28px;
+                line-height: 28px;
+                font-size: 14px;
+    
+                &::after{
+                    content:"";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 1px;
+                    height: 32px;
+                    background: #bfbfbf;
+                }
+            }
+    
+            .lang{
+                font-size: 16px;
+                color: #000000;
+    
+                &::before{
+                    content: url(image/ico_lang.png);
+                    display: inline-block;
+                    margin: 0 8px 0 0;
+                    transform: translateY(3px);
+                }
+            }
+    
+            button{
+                width: 68px;
+                height: 32px;
+            }
+        }
+    }
+
+    // 하위메뉴가 가로형인 GNB
+    #gnbHorizontal{
+        position: relative;
+        width: 1760px;
+        margin: 0 auto;
+
+        h1{
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+
+            a{
+                display: block;
+                line-height: 107px;
+            }
+        }
+
+        .member{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 29px;
+            height: 32px;
+            transform: translateY(-50%);
+        }
+
+        .gnb-horizontal{
+            text-align: center;
+            font-size: 0;
+
+            > li{
+                display: inline-block;
+                padding: 0 18px;
+
+                > a{
+                    display: block;
+                    position: relative;
+                    padding: 0 16px;
+                    line-height: 107px;
+                    font-size: 18px;
+                    color: #043874;
+
+                    &:focus{
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            height: 4px;
+                            background: $bgsky;
+                        }
+                    }
+                }
+
+                &:hover{
+                    > a{
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            height: 4px;
+                            background-color: $bgsky;
+                        }
+
+                        &::after{
+                            content:"";
+                            position: absolute;
+                            right: 0;
+                            top: 40px;
+                            width: 7px;
+                            height: 10px;
+                            background: $bgsky;
+
+                        }
+                    }
+                }
+            }
+
+            ul{
+                display: none;
+                position: absolute;
+                z-index: 10;
+
+                li{
+                    float: left;
+
+                    a{
+                        display: block;
+                        padding: 0 16px;
+                        line-height: 62px;
+                        font-size: 16px;
+                        color: $white;
+
+                        &:hover,
+                        &:focus{
+                            color: #e4f893;
+                        }
+                    }
+
+                    &:last-child{
+                        ul{
+                            margin-left: -280px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+     // 하위메뉴가 일체형인 GNB
+     #allInOne{
+        position: relative;
+
+        &::after {
+            content:"";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            height: 2px;
+            background: linear-gradient(to right, #e94e66, #f08925);
+        }
+
+        > section{
+            width: 1460px;
+            padding: 32px 0 0;
+            margin: 0 auto;
+        }
+
+        h1{
+            float: left;
+
+            a {
+                display: block;
+                height: 58px;
+                line-height: 58px;
+            }
+        }
+
+        .lang{
+            float: right;
+            line-height: 58px;
+        }
+
+        nav{
+            float: left;
+            padding: 0 0 0 43px;
+
+            a{
+                letter-spacing: -0.25px;
+            }
+        }
+
+        .gnb{
+            > li{
+                float:left;
+                position: relative;
+                width: 165px;
+
+                &.w2{
+                    width: 219px;
+
+                    article{
+                        > div{
+                            float: left;
+                            width: 50%;
+                        }
+                    }
+                }
+
+                &:hover{
+                    > a{
+                        color: #e6223e;
+                    }
+                    article{
+                        background-color: $white;
+                    }
+                }
+
+                &:last-child{
+                    article{
+                        border-right: 1px solid #d7d7d7;
+                    }
+                }
+                a{
+                    display: block;
+                    font-size: 16px;
+                    color: #222;
+                    line-height: 58px;
+                    text-align: center;
+                }
+
+                article{
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    z-index: 3;
+                    width: 100%;
+                    padding: 16px 20px;
+                    box-sizing: border-box;
+                    border-left: 1px solid #d7d7d7;
+
+                    div{
+                        ul{
+                            a{
+                                display: block;
+                            }
+
+                            > li{
+                                line-height: 40px;
+
+                                > a{
+                                    font-size: 15px;
+                                    color: #222222;
+                                }
+
+                                > ul{
+                                    padding: 0 0 8px;
+
+                                    > li{
+                                        line-height: 26px;
+
+                                        a{
+                                            font-size: 13px;
+                                            color: #6a6a6a;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    &#main{
+        display: block;
+        height: calc(100vh - 71px);
+        background-color: #ccc;
+        line-height: calc(100vh - 71px);
+        text-align: center;
+
+        div{
+            position: absolute;
+            margin: 0;
+            left: 50%;
+        
+            font : {
+                size: 50px;
+                weight: bold;
+            }
+
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.bg_gnb{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 107px;
+    height: 62px;
+    background: linear-gradient(to right, #38cebb, #3db1ed);
+}
+
+.bg_cnt{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    z-index: 2;
+    background: #ececec;
+    border-top: 1px solid #d7d7d7;
+
+    &::after{
+        content:"";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-top: 1px solid #d7d7d7;
+    }
+}
