@@ -1,0 +1,143 @@
+#lnb1{
+    width: 200px;
+
+    h2{
+        text-align: center;
+        line-height: 142px;
+        background-color: $red;
+
+        font : {
+            size: 27px;
+            weight: normal;
+        }
+        color: $white;
+    }
+
+    nav{
+        background-color: $white;
+    }
+
+    li{
+        border-top: 1px solid #e2e2e2;
+
+        a{
+            display: block;
+            position: relative;
+            padding: 0;
+            line-height: 59px;
+            font-size: 17px;
+            color: #706f6f;
+            transition: color .5s;
+
+            &::after{
+                content:"";
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                width: 10px;
+                height: 2px;
+                background-color: #e42929;
+                opacity: 0;
+                transition: .4s;
+            }
+
+            &.on,
+            &:hover,
+            &:focus{
+                color: #e42929;
+
+                &::after{
+                    right: 25px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+#lnb2{
+    width: 200px;
+
+    h2{
+        background-color: $white;
+        font-size: 23px;
+        color: #000000;
+        line-height: 60px;
+    }
+
+    nav{
+        > ul {
+            border-top: 1px solid #ddd;
+
+            > li{
+                background-color: $white;
+                border-bottom: 1px solid #ddd;
+
+                > a{
+                    display: block;
+                    padding: 0 0 0 20px;
+                    line-height: 56px;
+                    font-size: 17px;
+                    color: #000000;
+                    transition: background-color .5s;
+
+                    &.dep {
+                        position: relative;
+                        
+                        &::after{
+                            content: "\f078";
+                            position: absolute;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            right: 20px;
+                        }
+                    }
+                }
+
+                > ul{
+                    display: none;
+                    border-top: 1px solid #dddddd;
+                    background-color: #f3f3f3;
+
+                    a{
+                        display: block;
+                        position: relative;
+                        padding: 0;
+                        line-height: 31px;
+                        font-size: 13px;
+                        color: #000;
+
+                        &:before {
+                            content: "";
+                            display: inline-block;
+                            margin: 0 2px 0 0;
+                            width: 4px;
+                            height: 1px;
+                            background-color: #ffffff;
+                            vertical-align: 5px;
+                        }
+                    }
+                }
+
+                &.on{
+                    a{
+                        background-color: #ff0000;
+                        color: $white;
+
+                        &.dep {
+                            position: relative;
+
+                            &::after{
+                                content: "\f077";
+                                position: absolute;
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

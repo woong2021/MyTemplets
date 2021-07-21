@@ -1,10 +1,14 @@
 $(function(){
-    //gnb
-    $("#thema1").load("../gnb/thema1.html");
-    $("#thema2").load("../gnb/thema2.html");
-    $("#thema3").load("../gnb/thema3.html");
-    $("#thema4").load("../gnb/thema4.html");
+    //GNB
+    $("#gnbThema1").load("../gnb/thema1.html");
+    $("#gnbThema2").load("../gnb/thema2.html");
+    $("#gnbThema3").load("../gnb/thema3.html");
+    $("#gnbThema4").load("../gnb/thema4.html");
     
+    //LNB
+    $("#lnbThema1").load("../lnb/thema1.html");
+    $("#lnbThema2").load("../lnb/thema2.html");
+
     //footer
     $("#footer").load("../layout/footer.html");
 });

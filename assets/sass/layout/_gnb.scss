@@ -1,6 +1,6 @@
 
 header{
-    &#thema4{
+    &#gnbThema4{
         position: fixed;
         width: 100%;
         z-index: 1;
@@ -472,28 +472,6 @@ header{
     }
 }
 
-main{
-    &#main{
-        display: block;
-        height: calc(100vh - 71px);
-        background-color: #ccc;
-        line-height: calc(100vh - 71px);
-        text-align: center;
-
-        div{
-            position: absolute;
-            margin: 0;
-            left: 50%;
-        
-            font : {
-                size: 50px;
-                weight: bold;
-            }
-
-            transform: translateX(-50%);
-        }
-    }
-}
 
 .bg_gnb{
     display: none;
