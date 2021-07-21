@@ -4,6 +4,27 @@
 //	Contents
 // ----------------------------*
 
+/* ie9 */
+.ie9 {
+    header {
+        nav{
+            .sub{
+                > ul{
+                    &::after{
+                        content:"";
+                        display: block;
+                        clear: both;
+                    }
+
+                    > li{
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* Contents */
 main{
     padding: 0;
