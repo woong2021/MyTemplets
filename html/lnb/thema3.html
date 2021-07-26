@@ -17,7 +17,7 @@
 </head>
 <body id="lnbWrap">
     <header>
-        <h1></h1>
+        <h1>{ What to do!? }</h1>
         <nav id="lnb3">
             <ul>
                 <li>
@@ -104,5 +104,21 @@
     <main>
         Visual
     </main>
-</body>
-</html>
+    <script>
+        $(document).ready(function(){
+            var sub_nav = $('#lnb3 > ul > li');
+
+            sub_nav.on('mouseover focusin', function(){
+                var y = $(this).offset().top;
+
+                $(this).find('.sub > ul').css('top', y - 13);
+                $(this).siblings('li').children('.sub').removeAttr('style');
+                $(this).siblings('li').removeClass('on');
+                $(this).addClass('on');
+            });
+
+            sub_nav.on('mouseleave', function(){
+                $(this).removeClass('on');
+            });
+        });
+    </script>

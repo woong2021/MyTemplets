@@ -1,15 +1,20 @@
 ## 화성시(Portal) 업무 프로젝트
 
----
+화성 프로젝트 퍼블리셔 가이드 라인입니다. 해당 내용 참고 하시면서 작업 진행 부탁드립니다.
+
+가이드 라인은 Button, Table, Bullet 으로 되어 있습니다.
 
 ### 가이드 라인
 
 #### Button
 
-<button type="button">
-<div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:100%"><div style="padding:0 6px; white-space:pre; line-height:100%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"button"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span><span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">div</span><span style="color:#f0f0f0">&gt;</span></div></div></td></tr></table></div>
+- 1버튼 [미리보기 테스트] (https://www.naver.com)
 
----
+#### Table
+
+#### Bullet
+
+### 업무 프로세스
 
 ### 2021.07.20
 
@@ -23,4 +28,14 @@
 ```
 - [LNB] 하위 메뉴가 아래로 펼쳐지는 LNB 추가
 - [LNB] 하위 메뉴가 옆으로 평쳐지는 LNB 마크업 작업
+```
+
+### 2021.07.21
+
+```
+- [공통] "README.md"파일 수정
+- [공통] "hwasepmg/html" UI 변경
+- [LNB] 브랜드크럼 형 LNB 추가 (thema4)
+- [Mobile] 모바일 카테고리 신규 추가
+
 ```

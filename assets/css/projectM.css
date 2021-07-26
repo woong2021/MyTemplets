@@ -1,0 +1,38 @@
+@-webkit-keyframes defa { 0% { width: 0; } }
+@keyframes defa { 0% { width: 0; } }
+@-webkit-keyframes aniHover { 0% { height: 50px; }
+  100% { height: 200px; } }
+@keyframes aniHover { 0% { height: 50px; }
+  100% { height: 200px; } }
+@-webkit-keyframes loading { 0% { opacity: 0; -webkit-transform: scale(0.5); transform: scale(0.5); }
+  50% { opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2); }
+  100% { opacity: 0; -webkit-transform: scale(0.5); transform: scale(0.5); } }
+@keyframes loading { 0% { opacity: 0; -webkit-transform: scale(0.5); transform: scale(0.5); }
+  50% { opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2); }
+  100% { opacity: 0; -webkit-transform: scale(0.5); transform: scale(0.5); } }
+@-webkit-keyframes loading2 { 0% { top: 0; left: 0; }
+  25% { top: 0; left: calc(100% - 10px); background-color: dodgerblue; }
+  50% { top: calc(100% - 10px); left: calc(100% - 10px); background-color: orange; }
+  75% { top: calc(100% - 10px); left: 0; background-color: yellowgreen; }
+  100% { top: 0; left: 0; } }
+@keyframes loading2 { 0% { top: 0; left: 0; }
+  25% { top: 0; left: calc(100% - 10px); background-color: dodgerblue; }
+  50% { top: calc(100% - 10px); left: calc(100% - 10px); background-color: orange; }
+  75% { top: calc(100% - 10px); left: 0; background-color: yellowgreen; }
+  100% { top: 0; left: 0; } }
+@-webkit-keyframes circle { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@keyframes circle { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+/* Mobile */
+html { font-size: 20px; }
+
+body { font-size: 1rem; }
+
+header { border: 1px solid #ff0000; }
+header .top { position: relative; background: #5f0080; }
+header .top h1 { display: -webkit-box; display: -ms-flexbox; display: flex; height: 2.16rem; }
+header .top h1 a { margin: auto; width: 2.7rem; height: 1.26rem; background: url("images/h1_logo4.png") no-repeat 0 0/100% auto; }
+header .top .cart { position: absolute; right: 0; top: 0; width: 3.26rem; height: 100%; background: url "images/ico_cart.png" no-repeat 0 0/100% auto; }
+
+/*# sourceMappingURL=projectM.css.map */

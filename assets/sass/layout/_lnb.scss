@@ -1,3 +1,10 @@
+@charset "UTF-8";
+
+// *----------------------------
+//	LNB
+// ----------------------------*
+
+/* LNB */
 #lnb1{
     width: 200px;
 
@@ -165,6 +172,7 @@
 
         h1{
             padding: 125px 0 49px;
+            color: $white;
         }
 
         nav{
@@ -280,5 +288,100 @@
         color: $white;
         font-weight: bold;
         top: 0;
+    }
+}
+
+#lnb4{
+    // header{
+    //     margin: 0 auto 30px;
+    //     width: 1240px;
+    //     height: 100px;
+    //     background: tomato;
+    //     text-align: center;
+    //     line-height: 100px;
+    //     color: #ffffff;
+    //     font-size: 30px;
+    // }
+
+    // main{
+    //     display: block;
+    //     margin: 30px auto;
+    //     width: 1240px;
+    //     line-height: 500px;
+    //     background-color: skyblue;
+    //     color: #ffffff;
+    //     text-align: center;
+    //     font-size: 30px;
+    // }
+
+    .location{
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+
+        nav{
+            margin: 0 auto;
+            width: 1240px;
+
+            > ul {
+                display: flex;
+
+                > li {
+                    border-left: 1px solid #eeeeee;
+
+                    &:first-child{
+                        a{
+                            display: block;
+                            width: 46px;
+                            height: 46px;
+                            background: url ("images/ico_home.png") no-repeat center;
+                        }
+                    }
+
+                    &:last-child{
+                        background-repeat: 1px solid #eeeeee;
+                    }
+
+                    button{
+                        width: 162px;
+                        height: 46px;
+                        cursor: pointer;
+                        background: url ("images/bu_arrow_down.png") no-repeat right 24px center;
+
+                        &.on{
+                            color: #ec018c;
+                        }
+                    }
+
+                    ul{
+                        display: none;
+                        position: absolute;
+                        min-width: 150px;
+                        padding: 5px;
+                        background-color: #ffffff;
+                        border: 1px solid #eeeeee;
+                        border-radius: 4px;
+                        transform: translateY(2px);
+
+                        a{
+                            display: block;
+                            padding: 0 15px;
+                            border-radius: 4px;
+                            line-height: 40px;
+
+                            &:hover,
+                            &:focus {
+                                background: #eeeeee;
+                            }
+                        }
+
+                        &::after{
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

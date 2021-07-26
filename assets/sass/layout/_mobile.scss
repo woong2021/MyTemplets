@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+// *----------------------------
+//	Mobile
+// ----------------------------*
+
+/* Mobile */
+html {font-size: 20px}
+body{font-size: 1rem;}
+
+header{
+    border:1px solid #ff0000;
+
+    .top{
+        position: relative;
+        background: #5f0080;
+
+        h1{
+            display: flex;
+            height: 2.16rem;
+
+            a{
+                margin: auto;
+                width: 2.7rem;
+                height: 1.26rem;
+                background: url("images/h1_logo4.png") no-repeat 0 0 / 100% auto;
+            }
+        }
+
+        .cart{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 3.26rem;
+            height: 100%;
+            background: url ("images/ico_cart.png") no-repeat 0 0 / 100% auto;
+        }
+    }
+}

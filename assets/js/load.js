@@ -9,6 +9,7 @@ $(function(){
     $("#lnbThema1").load("../lnb/thema1.html");
     $("#lnbThema2").load("../lnb/thema2.html");
     $("#lnbThema3").load("../lnb/thema3.html");
+    $("#lnbThema4").load("../lnb/thema4.html");
 
     //footer
     $("#footer").load("../layout/footer.html");

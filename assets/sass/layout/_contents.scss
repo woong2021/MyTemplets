@@ -58,13 +58,16 @@ main{
                     width: 100%;
 
                     div{
-                        width: 95%;
-                        border: 1px solid;
-                        float: right;
+                        &.container{
+                            border: 1px solid;
+                            width: 95%;
+                            height: 100vh;
+                            float: right;
+                            line-height: 100vh;
+                        }
                     }
                 }
-            }
-            
+            }   
         }
     }
 }

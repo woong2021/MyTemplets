@@ -1,4 +1,11 @@
 
+@charset "UTF-8";
+
+// *----------------------------
+//	GNB
+// ----------------------------*
+
+/* GNB */
 header{
     &#gnbThema4{
         position: fixed;
@@ -380,7 +387,7 @@ header{
         }
 
         nav{
-            float: left;
+            float: right;
             padding: 0 0 0 43px;
 
             a{
@@ -486,12 +493,12 @@ header{
 .bg_cnt{
     display: none;
     position: absolute;
+    background: #ececec;
+    border-top: 1px solid #d7d7d7;
     left: 0;
     right: 0;
     top: 90px;
     z-index: 2;
-    background: #ececec;
-    border-top: 1px solid #d7d7d7;
 
     &::after{
         content:"";
