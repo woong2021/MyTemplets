@@ -23,17 +23,17 @@ header{
                 margin: auto;
                 width: 2.7rem;
                 height: 1.26rem;
-                background: url("images/h1_logo4.png") no-repeat 0 0 / 100% auto;
+                background: url("../../../assets/images/img/h1_logo4.png") no-repeat 0 0 / 100% auto;
             }
         }
 
         .cart{
             position: absolute;
-            right: 0;
-            top: 0;
+            right: -20px;
+            top: 10px;
             width: 3.26rem;
             height: 100%;
-            background: url ("images/ico_cart.png") no-repeat 0 0 / 100% auto;
+            background: url("../../../assets/images/img/ico_cart.png") no-repeat 0 0 / 45% auto;
         }
     }
 }

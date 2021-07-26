@@ -32,7 +32,7 @@ body { font-size: 1rem; }
 header { border: 1px solid #ff0000; }
 header .top { position: relative; background: #5f0080; }
 header .top h1 { display: -webkit-box; display: -ms-flexbox; display: flex; height: 2.16rem; }
-header .top h1 a { margin: auto; width: 2.7rem; height: 1.26rem; background: url("images/h1_logo4.png") no-repeat 0 0/100% auto; }
-header .top .cart { position: absolute; right: 0; top: 0; width: 3.26rem; height: 100%; background: url "images/ico_cart.png" no-repeat 0 0/100% auto; }
+header .top h1 a { margin: auto; width: 2.7rem; height: 1.26rem; background: url("../../../assets/images/img/h1_logo4.png") no-repeat 0 0/100% auto; }
+header .top .cart { position: absolute; right: -20px; top: 10px; width: 3.26rem; height: 100%; background: url("../../../assets/images/img/ico_cart.png") no-repeat 0 0/45% auto; }
 
 /*# sourceMappingURL=projectM.css.map */
