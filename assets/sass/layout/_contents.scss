@@ -52,6 +52,8 @@ main{
             margin: 0 auto;
             width: 1460px;
             border:1px solid $white;
+            flex-direction: row;
+            //flex-direction: column; //lnb4
 
             article{
                 &:last-child{
@@ -61,6 +63,7 @@ main{
                         &.container{
                             border: 1px solid;
                             width: 95%;
+                            //width: 100%; //lnb4
                             height: 100vh;
                             float: right;
                             line-height: 100vh;

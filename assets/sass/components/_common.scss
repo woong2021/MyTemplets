@@ -4,4 +4,29 @@
 // ----------------------------*
 
 /* Common */
+.ie10{
+    header{
+        nav{
+            .top {
+                display: block;
+
+                &::after{
+                    content:"";
+                    display: block;
+                    clear: both;
+                }
+
+                a{
+                    &:first-child{
+                        float: left;
+                    }
+
+                    &:last-child{
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}
 
