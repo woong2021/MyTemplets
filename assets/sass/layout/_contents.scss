@@ -73,4 +73,15 @@ main{
             }   
         }
     }
+
+    &#responsiveMain{
+        display: block;
+        background-color: #d5d5d5;
+        text-align: center;
+        line-height: 30rem;
+        
+        @media (min-width: 0) and (max-width: 720px){
+            line-height: calc(100vh - 3rem);   
+        }
+    }
 }

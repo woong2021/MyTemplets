@@ -30,6 +30,28 @@
 .ie10 header nav .top a:first-child { float: left; }
 .ie10 header nav .top a:last-child { float: right; }
 
+.button-01 { background: url("../images/sub/guideline/img-guideline-button-01.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-02 { background: url("../images/sub/guideline/img-guideline-button-02.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-03 { background: url("../images/sub/guideline/img-guideline-button-03.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-04 { background: url("../images/sub/guideline/img-guideline-button-04.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-05 { background: url("../images/sub/guideline/img-guideline-button-05.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-06 { background: url("../images/sub/guideline/img-guideline-button-06.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-07 { background: url("../images/sub/guideline/img-guideline-button-07.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-08 { background: url("../images/sub/guideline/img-guideline-button-08.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-09 { background: url("../images/sub/guideline/img-guideline-button-09.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-10 { background: url("../images/sub/guideline/img-guideline-button-10.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
+.button-11 { background: url("../images/sub/guideline/img-guideline-button-11.png") no-repeat; background-size: contain; height: 200px; border: 1px solid orange; }
+
 /* Mobile */
 html { font-size: 20px; }
 
