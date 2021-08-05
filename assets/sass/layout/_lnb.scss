@@ -8,6 +8,10 @@
 #lnb1{
     width: 200px;
 
+    @media (min-width: 0) and (max-width: 720px){
+        display: none;
+    }
+
     h2{
         text-align: center;
         line-height: 142px;
@@ -64,6 +68,11 @@
 
 #lnb2{
     width: 200px;
+    display: block;
+
+    @media (min-width: 0) and (max-width: 720px){
+        display: none;
+    }
 
     h2{
         background-color: $white;
@@ -292,28 +301,6 @@
 }
 
 #lnb4{
-    // header{
-    //     margin: 0 auto 30px;
-    //     width: 1240px;
-    //     height: 100px;
-    //     background: tomato;
-    //     text-align: center;
-    //     line-height: 100px;
-    //     color: #ffffff;
-    //     font-size: 30px;
-    // }
-
-    // main{
-    //     display: block;
-    //     margin: 30px auto;
-    //     width: 1240px;
-    //     line-height: 500px;
-    //     background-color: skyblue;
-    //     color: #ffffff;
-    //     text-align: center;
-    //     font-size: 30px;
-    // }
-
     .location{
         border-top: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
