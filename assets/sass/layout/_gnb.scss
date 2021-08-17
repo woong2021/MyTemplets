@@ -7,16 +7,13 @@
 
 /* GNB */
 header{
-    &#gnbThema4{
-        position: fixed;
-        width: 100%;
-        z-index: 1;
-    }
-
     > section{
         margin: 0 auto;
         width: 1460px;
 
+        @media (min-width: 0) and (max-width: 1024px){
+            width: 100%;
+        }
         // 하위메뉴가 없는 GNB
         &#gnb{
             position: relative;
@@ -34,7 +31,7 @@ header{
             nav{
                 line-height: 100px;
 
-                @media (min-width: 0) and (max-width: 720px){
+                @media (min-width: 0) and (max-width: 1024px){
                     position: fixed;
                     border: 1px solid;
                     top: 90px;
@@ -44,7 +41,7 @@ header{
                 }
 
                 &.on{
-                    @media (min-width: 0) and (max-width: 720px){
+                    @media (min-width: 0) and (max-width: 1024px){
                         left: 0;
                         z-index: 1;
                     }
@@ -263,6 +260,10 @@ header{
             width: 1460px;
             margin: 0 auto;
 
+            @media (min-width: 0) and (max-width: 1024px){
+                width: 100%;
+            }
+
             h1{
                 position: absolute;
                 display: block;
@@ -377,9 +378,10 @@ header{
      #allInOne{
         position: relative;
 
-        @media (min-width: 0) and (max-width: 720px){
-            border: 1px solid blue;
+        @media (min-width: 0) and (max-width: 1024px){
+            position: static;
         }
+
         &::after {
             content:"";
             position: absolute;
@@ -388,11 +390,11 @@ header{
             bottom: 0;
             z-index: -1;
             height: 2px;
-            background: linear-gradient(to right, #e94e66, #f08925);
+            //background: linear-gradient(to right, #e94e66, #f08925);
         }
 
         + &.bg_cnt{
-            @media (min-width: 0) and (max-width: 720px){
+            @media (min-width: 0) and (max-width: 1024px){
                 display: none;
             }
         }
@@ -401,6 +403,10 @@ header{
             width: 1460px;
             padding: 32px 0 0;
             margin: 0 auto;
+
+            @media (min-width: 0) and (max-width: 1024px){
+                width: 100%;
+            }
         }
 
         h1{
@@ -422,7 +428,7 @@ header{
             float: right;
             padding: 0 0 0 43px;
 
-            @media (min-width: 0) and (max-width: 720px){
+            @media (min-width: 0) and (max-width: 1024px){
                 position: fixed;
                 border: 1px solid;
                 top: 90px;
@@ -436,7 +442,7 @@ header{
             }
 
             &.on{
-                @media (min-width: 0) and (max-width: 720px){
+                @media (min-width: 0) and (max-width: 1024px){
                     left: 0;
                 }
             }
@@ -461,10 +467,20 @@ header{
 
                 &:hover{
                     > a{
-                        color: #e6223e;
+                        color: $defaultMenu;
                     }
                     article{
-                        background-color: $white;
+                        background-color: $defaultColor;
+
+                        div{
+                            ul{
+                                li{
+                                    a{
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -473,10 +489,12 @@ header{
                         border-right: 1px solid #d7d7d7;
                     }
                 }
+                
                 a{
                     display: block;
-                    font-size: 16px;
+                    font-size: 17px;
                     color: #222;
+                    font-weight: bold;
                     line-height: 58px;
                     text-align: center;
                 }
@@ -501,7 +519,11 @@ header{
                                 line-height: 40px;
 
                                 > a{
-                                    font-size: 15px;
+                                    font : {
+                                        size: 16px;
+                                        weight: normal;
+                                    }
+                                    
                                     color: #222222;
                                 }
 
@@ -532,7 +554,7 @@ header{
             margin: 0 auto;
             width: 62rem;
 
-            @media (min-width: 0) and (max-width: 720px){
+            @media (min-width: 0) and (max-width: 1024px){
                 width: 100%;
             }
         }
@@ -544,7 +566,7 @@ header{
                 height: 4rem;
                 background: url("../../../assets/images/img/h1_logo7.png") no-repeat center;
 
-                @media (min-width: 0) and (max-width: 720px){
+                @media (min-width: 0) and (max-width: 1024px){
                     width: 4.55rem;
                     height: 3rem;
                     background-size: 3.05rem auto;
@@ -553,7 +575,7 @@ header{
         }
 
         nav{
-            @media (min-width: 0) and (max-width: 720px){
+            @media (min-width: 0) and (max-width: 1024px){
                 position: fixed;
                 right: -100%;
                 top: 0;
@@ -568,7 +590,7 @@ header{
             > ul{
                 display: flex;
 
-                @media (min-width: 0) and (max-width: 720px){
+                @media (min-width: 0) and (max-width: 1024px){
                     display: block;
                 }
 
@@ -581,7 +603,7 @@ header{
                         color: #111;
                     }
 
-                    @media (min-width: 0) and (max-width: 720px){
+                    @media (min-width: 0) and (max-width: 1024px){
                         > a {
                             color: #000000;
                             font-weight: bold;
@@ -589,12 +611,12 @@ header{
                     }
 
                     > ul{
-                        @media (min-width: 0) and (max-width: 720px){
+                        @media (min-width: 0) and (max-width: 1024px){
                             margin-top: -.5rem;
                         }
 
                         a{
-                            @media (min-width: 0) and (max-width: 720px){
+                            @media (min-width: 0) and (max-width: 1024px){
                                 display:block;
                                 line-height: 1.3rem;
                                 font-size: .7rem;
@@ -604,7 +626,7 @@ header{
 
                             &:focus,
                             &:hover{
-                                @media (min-width: 0) and (max-width: 720px){
+                                @media (min-width: 0) and (max-width: 1024px){
                                     color: #ff4325;
                                 }
                             }
@@ -615,7 +637,7 @@ header{
                 ul{
                     display: none;
 
-                    @media (min-width: 0) and (max-width: 720px){
+                    @media (min-width: 0) and (max-width: 1024px){
                         display: block;
                     }
                 }
@@ -628,7 +650,7 @@ header{
             .close{
                 display: none;
 
-                @media (min-width: 0) and (max-width: 720px){
+                @media (min-width: 0) and (max-width: 1024px){
                     display: block;
                     position: absolute;
                     right: .8rem;
@@ -645,10 +667,107 @@ header{
             height: 4rem;
             background: url("../../../assets/images/img/btn_nav2.png") no-repeat center;
 
-            @media (min-width: 0) and (max-width: 720px){
+            @media (min-width: 0) and (max-width: 1024px){
                 width: 3rem;
                 height: 3rem;
                 background-size: 1rem auto;
+            }
+        }
+    }
+
+    &#gnbThema4{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &#gnbThema5{
+        position: fixed;
+        background-color: $white;
+        width: 100%;
+        z-index: 1; 
+        
+        @media (min-width: 0) and (max-width: 1024px){
+            position: relative;
+        }
+
+        #allInOneLogo{
+            border-bottom:1px solid #ccc;
+
+            > section{
+                width: 1460px;
+                height: 80px;
+                margin: 0 auto;
+
+                @media (min-width: 0) and (max-width: 1024px){
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        #allInOne{
+            border-bottom:1px solid #ccc;
+
+            > section{
+                padding: 0;
+                width: 1460px;
+                margin: 0 auto;
+                
+                &#web{
+                    @media (min-width: 0) and (max-width: 1024px){
+                        display: none;
+                    }
+                }
+
+                &#mobile{
+                    display: none;
+
+                    @media (min-width: 0) and (max-width: 1024px){
+                        position: absolute;
+                        display: inline-block;
+                        top: 0;
+                        right: 0;
+                        width: 10%;
+                        height: 40px;
+                        border: 1px solid #ff0000;
+                        cursor: pointer;
+                    } 
+
+                    &::after{
+                        content: "\f0c9";
+                        position: absolute;
+                        display: block;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        top: 50%;
+                        left: 50%;
+                        opacity: 1;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                
+            }
+
+            nav{
+                padding: 0;
+                float: none;
+            }
+
+            +.bg_cnt{
+                top: 140px;
+            }
+
+            .gnb{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                > li{
+                    float: none;
+                    width: 210px;
+                }
             }
         }
     }
@@ -668,12 +787,13 @@ header{
 .bg_cnt{
     display: none;
     position: absolute;
-    background: #ececec;
+    background: $white;
     border-top: 1px solid #d7d7d7;
     left: 0;
     right: 0;
     top: 90px;
     z-index: 2;
+    box-shadow: 3px 0px 6px #ffffff;
 
     &::after{
         content:"";

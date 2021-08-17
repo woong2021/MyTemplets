@@ -121,5 +121,4 @@ $(function(){
     function removeAttrs(){
         select_attr.removeAttr('aria-hidden').removeAttr('tabindex');
     }
-
 });

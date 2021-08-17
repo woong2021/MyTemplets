@@ -1,0 +1,184 @@
+<div id="allInOneLogo">
+    <section class="clear">
+        <h1><a href="" title="Logo">화성시 주차포탈 </a></h1>
+        <h2 class="hide">상단 메뉴</h2>
+    </section>
+</div>
+<div id="allInOne">
+    <section id="web">
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="" title="공영주차장">공영주차장</a>
+                    <article>
+                        <div>
+                            <ul>
+                                <li><a href="" title="주차장소개">주차장소개</a></li>
+                                <li><a href="" title="지도검색">지도검색</a></li>
+                                <li><a href="" title="주차장검색">주차장검색</a></li>
+                                <li><a href="" title="찿아오시는길">찿아오시는길</a></li>
+                                <li><a href="" title="노상주차장 안내">노상주차장 안내</a></li>
+                                <li><a href="" title="노외주차장 안내">노외주차장 안내</a></li>
+                                <li><a href="" title="이의신청">이의신청</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <a href="" title="주차요금 사전결제">주차요금 사전결제</a>
+                    <article>
+                        <div>
+                            <ul>
+                                <li><a href="" title="안내">안내</a></li>
+                                <li><a href="" title="조회/결제">조회/결제</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <a href="" title="미납주차요금">미납주차요금</a>
+                    <article>
+                        <div>
+                            <ul>
+                                <li><a href="" title="안내">안내</a></li>
+                                <li><a href="" title="조회/결제">조회/결제</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <a href="" title="감면대상 사전등록">감면대상 사전등록</a>
+                    <article>
+                        <div>
+                            <ul>
+                                <li><a href="" title="즉시감면 안내">즉시감면 안내</a></li>
+                                <li><a href="" title="즉시감면 자격확인">즉시감면 자격확인</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <a href="" title="공영주차 정기권">공영주차 정기권</a>
+                    <article>
+                        <div>
+                            <ul>
+                                <li><a href="" title="정기권 안내">정기권 안내</a></li>
+                                <li><a href="" title="정기권 신청">정기권 신청</a></li>
+                                <li><a href="" title="정기권 조회/결제">정기권 조회/결제</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <a href="" title="열린공간">열린공간</a>
+                    <article>
+                        <div>
+                            <ul>
+                                <li><a href="" title="공지사항">공지사항</a></li>
+                                <li><a href="" title="자주하는질문">자주하는질문</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <a href="" title="열린공간">무정차</a>
+                    <article>
+                        <div>
+                            <ul>
+                                <li><a href="" title="무정차">무정차</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section id="mobile">
+        <span class="hide">메뉴버튼</span>
+        <nav>
+            <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+            </ul>
+        </nav>
+    </section>
+</div>
+<div class="bg_cnt"></div>
+<script>
+    // 하위메뉴 일체형
+    const gnbdiv = $('.gnb > li > article');
+    const bg = $('.bg_cnt');
+    const li = $('.gnb > li');
+
+    li.on('mouseover focusin', function(){
+        hig = 0;
+        gnbdiv.each(function(){
+            temp = parseInt($(this).outerHeight());
+
+            if(hig <= temp){
+                hig = temp;
+            }
+        });
+
+        gnbdiv.show().css('height', hig);
+        bg.show().css('height', hig);
+    });
+
+    li.on('mouseleave', function(){
+        hide_el();
+    });
+
+    function hide_el(){
+        gnbdiv.hide().removeAttr('style');
+        bg.hide().removeAttr('style');
+    };
+
+    //response nav
+    var select_attr = $('#mobile nav a, #mobile nav button');
+
+    $(window).on('resize load', function(){
+        var width = $(window).width();
+
+        if (width < 1024){
+            attrs();
+        }else{
+            removeAttrs();
+            $('.dim').fadeOut();
+            $('#mobile nav').removeClass('on');
+        }
+    });
+
+    $('#mobile').on({
+        "click" : function(){
+            var width = $(window).width();
+
+            if(width < 1024){
+                $('#mobile nav').addClass('on');
+                $('#mobile nav a:first').focus();
+                $('.dim').fadeIn();
+
+                removeAttrs();
+            }
+        }
+    });
+
+    $('#mobile .close').on({
+        "click" : function(){
+            $(this).parent().removeClass('on');
+            $('.dim').fadeOut();
+            
+            attrs();
+        }
+    });
+
+    function attrs(){
+        select_attr.attr({
+            'aria-hidden' : 'true',
+            'tabindex' : '-1'
+        });
+    }
+
+    function removeAttrs(){
+        select_attr.removeAttr('aria-hidden').removeAttr('tabindex');
+    }
+</script>

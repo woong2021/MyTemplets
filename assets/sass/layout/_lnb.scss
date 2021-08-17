@@ -8,7 +8,7 @@
 #lnb1{
     width: 200px;
 
-    @media (min-width: 0) and (max-width: 720px){
+    @media (min-width: 0) and (max-width: 1024px){
         display: none;
     }
 
@@ -70,7 +70,7 @@
     width: 200px;
     display: block;
 
-    @media (min-width: 0) and (max-width: 720px){
+    @media (min-width: 0) and (max-width: 1024px){
         display: none;
     }
 
@@ -369,6 +369,96 @@
                     }
                 }
             }
+        }
+    }
+}
+
+#lnb5{
+    width: 250px;
+
+    @media (min-width: 0) and (max-width: 1024px){
+        display: none;
+    }
+
+    #lnbTilte{
+        background-color: $LNBTitle;
+        height: 110px;
+        line-height: 110px;
+
+        h2{
+            text-align: center;    
+    
+            font : {
+                size: 22px;
+                weight: normal;
+            }
+            color: $white;
+        }
+    }
+
+    nav{
+        background-color: $white;
+    }
+
+    li{
+        border-bottom: 1px solid $gray;
+        height: 45px;
+
+        &.on{
+            a{
+                color: $LNBMenu; 
+                
+                &.dep{
+                    &::after{
+                        content: "\f105";
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        right: 20px;
+                        opacity: 1;
+                        color: $LNBMenu;
+                    }
+                }
+            }
+            
+        }
+
+        a{
+            display: block;
+            position: relative;
+            padding: 0;
+            line-height: 45px;
+            font-size: 16px;
+            color: #706f6f;
+
+            &::after{
+                content:"";
+                position: absolute;
+                right: 20px;
+                opacity: 0;
+                transition: .4s;
+            }
+
+            &:hover,
+            &:focus{
+                color: $LNBMenu;
+
+                &.dep{
+                    &::after{
+                        content: "\f105";
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        right: 20px;
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+
+        &:last-child{
+            border-bottom: 0;
         }
     }
 }
