@@ -94,11 +94,15 @@
         </nav>
     </section>
     <section id="mobile">
-        <span class="hide">메뉴버튼</span>
-        <nav>
+        <span class="hide">좌측 메뉴버튼</span>
+        <nav id="lnb">
             <ul>
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
+                <li><a href="" title="공영주차장">공영주차장</a></li>
+                <li><a href="" title="주차요금 사전결제">주차요금 사전결제</a></li>
+                <li><a href="" title="미납주차요금">미납주차요금</a></li>
+                <li><a href="" title="감면대상 사전등록">감면대상 사전등록</a></li>
+                <li><a href="" title="열린공간">열린공간</a></li>
+                <li><a href="" title="무정차">무정차</a></li>
             </ul>
         </nav>
     </section>
@@ -136,41 +140,7 @@
     //response nav
     var select_attr = $('#mobile nav a, #mobile nav button');
 
-    $(window).on('resize load', function(){
-        var width = $(window).width();
-
-        if (width < 1024){
-            attrs();
-        }else{
-            removeAttrs();
-            $('.dim').fadeOut();
-            $('#mobile nav').removeClass('on');
-        }
-    });
-
-    $('#mobile').on({
-        "click" : function(){
-            var width = $(window).width();
-
-            if(width < 1024){
-                $('#mobile nav').addClass('on');
-                $('#mobile nav a:first').focus();
-                $('.dim').fadeIn();
-
-                removeAttrs();
-            }
-        }
-    });
-
-    $('#mobile .close').on({
-        "click" : function(){
-            $(this).parent().removeClass('on');
-            $('.dim').fadeOut();
-            
-            attrs();
-        }
-    });
-
+    // function
     function attrs(){
         select_attr.attr({
             'aria-hidden' : 'true',
@@ -181,4 +151,34 @@
     function removeAttrs(){
         select_attr.removeAttr('aria-hidden').removeAttr('tabindex');
     }
+
+    $(window).on('resize load', function(){
+        var width = $(window).width();
+
+        // 사이즈 감지
+        if (width < 1024){
+            attrs();
+        }else{
+            removeAttrs();
+            $('.dim').fadeOut();
+            $('#mobile nav').removeClass('on');
+        }
+    });
+
+    //햄버거 메뉴 및 클릭 이벤트
+    $('#mobile, .dim').on({
+        "click" : function(){
+            $('#mobile nav').toggleClass('on');
+            $('#mobile nav a:first').focus();
+            $('.dim').fadeIn(300);
+
+            removeAttrs();
+
+            if($('#mobile nav').hasClass('on') === false){
+                $('.dim').fadeOut(300);
+
+                attrs();   
+            }
+        }
+    });
 </script>

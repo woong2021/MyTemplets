@@ -13,6 +13,9 @@ $(function(){
     $("#lnbThema4").load("../lnb/thema4.html");
     $("#lnbThema5").load("../lnb/thema5.html");
 
-    //footer
+    //Content
+    $("#contThema1").load("../content/thema1.html");
+    
+    //Footer
     $("#footer").load("../layout/footer.html");
 });
