@@ -5,6 +5,7 @@ import SassView from '../submenu/SassView.vue';
 import GitView from '../submenu/GitView.vue';
 import JqueryView from '../submenu/JqueryView.vue';
 import VueView from '../submenu/VueView.vue';
+import ChartView from '../submenu/ChartView.vue';
 
 Vue.use(VueRouter);
 
@@ -13,7 +14,11 @@ export const router = new VueRouter({
     routes: [
         {
             path: '/',
-            redirect: '/html',
+            redirect: '/chart',
+        },
+        {
+            path: '/chart',
+            component: ChartView,
         },
         {
             path: '/html',

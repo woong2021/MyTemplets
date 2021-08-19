@@ -1,20 +1,20 @@
-# 화성시 업무 프로젝트 (차후 브랜치 할 예정)
+## 화성시 업무 프로젝트 (차후 브랜치 할 예정)
 
 화성시 프로젝트 퍼블리서 가이드 라인 입니다. 해당 내용을 참고 하시면서 작업 진행 부탁드립니다.
 
-## | 가이드 라인 |
+### | 가이드 라인 |
 
-### 1 media query
+#### 1 media query
 
-### 2 Font
+#### 2 Font
 
-### 3 Color
+#### 3 Color
 
-### 4 Button
+#### 4 Button
 
-### 5 Table
+#### 5 Table
 
-### 6 Bullet
+#### 6 Bullet
 
 ### | 화성시 업무 프로세스 |
 
@@ -35,15 +35,15 @@
 
 ---
 
-# MyTemplets
+## MyTemplets
 
 퍼블리셔 업무에 필요한 템플릿을 모아놓은 저장소 입니다.
 
-## 필요정보
+### 필요정보
 
 [VUE.js 가이드라인](https://vuejs.org/v2/style-guide/)
 
-## API
+### API
 
 [해커뉴스 API](https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md)
 
@@ -121,4 +121,13 @@
 - [공통] "vue-research" 와 "vue-templets" 프로젝트 분리
 - [vue-templets] 폴더 및 파일내용 수정
 - [vue-templets] "sass" 적용
+```
+
+#### 2021.08.20
+
+```
+- [vue-research] vue.js 라우터 기능 
+- [vue-research] axios를 이용한 API 호출
+- [vue-templets] "header" UI 수정
+- [vue-templets] "chartView.vue" 신규 생성
 ```
