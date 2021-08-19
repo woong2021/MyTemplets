@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import NewsView from '../submenu/NewsView.vue';
-import AskView from '../submenu/AskView.vue';
-import JobsView from '../submenu/JobsView.vue';
-import UserView from '../submenu/UserView.vue';
-import ItemView from '../submenu/ItemView.vue';
+import HtmlView from '../submenu/HtmlView.vue';
+import SassView from '../submenu/SassView.vue';
+import GitView from '../submenu/GitView.vue';
+import JqueryView from '../submenu/JqueryView.vue';
+import VueView from '../submenu/VueView.vue';
 
 Vue.use(VueRouter);
 
@@ -12,28 +12,28 @@ export const router = new VueRouter({
     mode: 'history', // url 헤쉬 값 제거
     routes: [
         {
-            path: '/', //url에 대한 정보
-            redirect: '/news',
+            path: '/',
+            redirect: '/html',
         },
         {
-            path: '/news',
-            component: NewsView, // 특정 url 주소로 갔을 때 표시될 컴포넌트
+            path: '/html',
+            component: HtmlView,
         },
         {
-            path: '/ask',
-            component: AskView,
+            path: '/sass',
+            component: SassView,
         },
         {
-            path: '/jobs',
-            component: JobsView,
+            path: '/git',
+            component: GitView,
         },
         {
-            path: '/user',
-            component: UserView,
+            path: '/jquery',
+            component: JqueryView,
         },
         {
-            path: '/item',
-            component: ItemView,
+            path: '/vue',
+            component: VueView,
         }
 
     ]

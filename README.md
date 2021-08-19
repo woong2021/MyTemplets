@@ -113,3 +113,12 @@
 - [vue] vue project 설치 및 셋팅
 - [vue] vue.js 라우터 기능 및 API 연동
 ```
+
+#### 2021.08.19
+
+```
+- [공통]"vue-research" 신규 생성
+- [공통] "vue-research" 와 "vue-templets" 프로젝트 분리
+- [vue-templets] 폴더 및 파일내용 수정
+- [vue-templets] "sass" 적용
+```

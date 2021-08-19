@@ -1,5 +1,5 @@
 <template>
-  <div>User</div>
+    <div>Ask</div>
 </template>
 
 <script>

@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <gnb-menu></gnb-menu>
+    <tool-bar></tool-bar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import GnbMenu from './components/GnbMenu.vue';
-
+import ToolBar from './components/ToolBar.vue';
 export default {
   components: {
-    GnbMenu,
+    ToolBar,
   }
 }
 </script>
 
 <style>
-  
+
 </style>

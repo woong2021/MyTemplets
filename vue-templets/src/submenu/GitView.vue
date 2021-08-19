@@ -1,5 +1,5 @@
 <template>
-  <div>Item</div>
+  <div>GIT 이란?</div>
 </template>
 
 <script>
