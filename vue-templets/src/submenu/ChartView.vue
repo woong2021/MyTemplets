@@ -1,8 +1,8 @@
 <template>
   <main class="container">
-      <section>
-          Index Page & Chart Page
-      </section>
+    <section>
+      Index Page & Chart Page
+    </section>
   </main>
 </template>
 

@@ -126,6 +126,7 @@
 #### 2021.08.20
 
 ```
+- [공통] 공백(들여쓰기) 4에서 2로 변경
 - [vue-research] vue.js 라우터 기능 
 - [vue-research] axios를 이용한 API 호출
 - [vue-templets] "header" UI 수정

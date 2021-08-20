@@ -10,36 +10,36 @@ import ChartView from '../submenu/ChartView.vue';
 Vue.use(VueRouter);
 
 export const router = new VueRouter({
-    mode: 'history', // url 헤쉬 값 제거
-    routes: [
-        {
-            path: '/',
-            redirect: '/chart',
-        },
-        {
-            path: '/chart',
-            component: ChartView,
-        },
-        {
-            path: '/html',
-            component: HtmlView,
-        },
-        {
-            path: '/sass',
-            component: SassView,
-        },
-        {
-            path: '/git',
-            component: GitView,
-        },
-        {
-            path: '/jquery',
-            component: JqueryView,
-        },
-        {
-            path: '/vue',
-            component: VueView,
-        }
-
-    ]
+  mode: 'history', // url 헤쉬 값 제거
+  
+  routes: [
+    {
+      path: '/',
+      redirect: '/chart',
+    },
+    {
+      path: '/chart',
+      component: ChartView,
+    },
+    {
+      path: '/html',
+      component: HtmlView,
+    },
+    {
+      path: '/sass',
+      component: SassView,
+    },
+    {
+      path: '/git',
+      component: GitView,
+    },
+    {
+      path: '/jquery',
+      component: JqueryView,
+    },
+    {
+      path: '/vue',
+      component: VueView,
+    }
+  ]
 });

@@ -1,46 +1,46 @@
 <div id="lnb2">
-    <h2>Overview</h2>
-    <nav>
+  <h2>Overview</h2>
+  <nav>
+    <ul>
+      <li class="on">
+        <a href="" title="Menu 1">Menu 1</a>
         <ul>
-            <li class="on">
-                <a href="" title="Menu 1">Menu 1</a>
-                <ul>
-                    <li><a href="" title="SubMenu 1">SubMenu 1</a></li>
-                    <li><a href="" title="SubMenu 2">SubMenu 2</a></li>
-                    <li><a href="" title="SubMenu 3">SubMenu 3</a></li>
-                </ul>
-            </li>
-            <li><a href="" title="Menu 2">Menu 2</a></li>
-            <li>
-                <a href="" title="Menu 3">Menu 3</a>
-                <ul>
-                    <li><a href="" title="SubMenu 1">SubMenu 1</a></li>
-                    <li><a href="" title="SubMenu 2">SubMenu 2</a></li>
-                    <li><a href="" title="SubMenu 3">SubMenu 3</a></li>
-                </ul>
-            </li>
-            <li><a href="" title="Menu 4">Menu 4</a></li>
-            <li><a href="" title="Menu 5">Menu 5</a></li>
+          <li><a href="" title="SubMenu 1">SubMenu 1</a></li>
+          <li><a href="" title="SubMenu 2">SubMenu 2</a></li>
+          <li><a href="" title="SubMenu 3">SubMenu 3</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="" title="Menu 2">Menu 2</a></li>
+      <li> 
+        <a href="" title="Menu 3">Menu 3</a>
+        <ul>
+          <li><a href="" title="SubMenu 1">SubMenu 1</a></li>
+          <li><a href="" title="SubMenu 2">SubMenu 2</a></li>
+          <li><a href="" title="SubMenu 3">SubMenu 3</a></li>
+        </ul>
+      </li>
+      <li><a href="" title="Menu 4">Menu 4</a></li>
+      <li><a href="" title="Menu 5">Menu 5</a></li>
+    </ul>
+  </nav>
 </div>
 <script>
-    $(document).ready(function(){
-        const lnb = $('#lnb2 ul').prev('a');
-        const lnb_nav = $('#lnb2 li');
+  $(document).ready(function(){
+    const lnb = $('#lnb2 ul').prev('a');
+    const lnb_nav = $('#lnb2 li');
 
-        lnb.addClass('dep');
-        lnb_nav.each(function(){
-            if($(this).hasClass('on')){
-                $(this).children('ul').show();
-            }
-        });
-
-        lnb.on('click', function(){
-            $(this).parent().addClass('on').children('ul').stop().slideDown(400);
-            $(this).parent().siblings('li').removeClass('on').children('ul').stop().slideUp(400);
-
-            return false;
-        });
+    lnb.addClass('dep');
+    lnb_nav.each(function(){
+      if($(this).hasClass('on')){
+        $(this).children('ul').show();
+      }
     });
+
+    lnb.on('click', function(){
+      $(this).parent().addClass('on').children('ul').stop().slideDown(400);
+      $(this).parent().siblings('li').removeClass('on').children('ul').stop().slideUp(400);
+
+      return false;
+    });
+  });
 </script>

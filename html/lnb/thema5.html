@@ -1,33 +1,33 @@
 <div id="lnb5">
-    <div id="lnbTilte">
-        <h2>LNB Title</h2>
-    </div>
-    <nav>
-        <ul>
-            <li class="on"><a href="" title="Menu 1">Menu 1</a></li>
-            <li><a href="" title="Menu 2">Menu 2</a></li>
-            <li><a href="" title="Menu 3">Menu 3</a></li>
-            <li><a href="" title="Menu 4">Menu 4</a></li>
-        </ul>
-    </nav>
+  <div id="lnbTilte">
+    <h2>LNB Title</h2>
+  </div>
+  <nav>
+    <ul>
+      <li class="on"><a href="" title="Menu 1">Menu 1</a></li>
+      <li><a href="" title="Menu 2">Menu 2</a></li>
+      <li><a href="" title="Menu 3">Menu 3</a></li>
+      <li><a href="" title="Menu 4">Menu 4</a></li>
+    </ul>
+  </nav>
 </div>
 <script>
-    $(document).ready(function(){
-        const lnb = $('#lnb5 ul li').children('a');
-        const lnb_nav = $('#lnb5 li');
+  $(document).ready(function(){
+    const lnb = $('#lnb5 ul li').children('a');
+    const lnb_nav = $('#lnb5 li');
 
-        lnb.addClass('dep');
-        lnb_nav.each(function(){
-            if($(this).hasClass('on')){
-                $(this).children('ul').show();
-            }
-        });
-
-        lnb.on('click', function(){
-            $(this).parent().addClass('on').children('ul').stop().slideDown(400);
-            $(this).parent().siblings('li').removeClass('on').children('ul').stop().slideUp(200);
-
-            return false;
-        });
+    lnb.addClass('dep');
+    lnb_nav.each(function(){
+      if($(this).hasClass('on')){
+        $(this).children('ul').show();
+      }
     });
+
+    lnb.on('click', function(){
+      $(this).parent().addClass('on').children('ul').stop().slideDown(400);
+      $(this).parent().siblings('li').removeClass('on').children('ul').stop().slideUp(200);
+
+      return false;
+    });
+  });
 </script>

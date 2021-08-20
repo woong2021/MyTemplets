@@ -1,45 +1,39 @@
 <div id="lnb4">
-    <!-- 브레드크럼 영역 -->
-    <div class="location">
-        <h2 class="hide">현재 위치 안내</h2>
-        <nav>
-            <ul>
-                <li><a href=""><span class="hide">홈</span></a></li>
-                <li>
-                    <button>Title1</button>
-                    <ul>
-                        <li><a href="Menu1">Menu1</a></li>
-                        <li><a href="Menu2">Menu2</a></li>
-                        <li><a href="Menu3">Menu3</a></li>
-                        <li><a href="Menu4">Menu4</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <button>Title2</button>
-                    <ul>
-                        <li><a href="Menu1">Menu1</a></li>
-                        <li><a href="Menu2">Menu2</a></li>
-                        <li><a href="Menu3">Menu3</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
+  <!-- 브레드크럼 영역 -->
+  <div class="location">
+    <h2 class="hide">현재 위치 안내</h2>
+    <nav>
+      <ul>
+        <li><a href=""><span class="hide">홈</span></a></li>
+        <li>
+          <button>Title1</button>
+          <ul>
+            <li><a href="Menu1">Menu1</a></li>
+            <li><a href="Menu2">Menu2</a></li>
+            <li><a href="Menu3">Menu3</a></li>
+            <li><a href="Menu4">Menu4</a></li>
+          </ul>
+        </li>
+        <li>
+          <button>Title2</button>
+          <ul>
+            <li><a href="Menu1">Menu1</a></li>
+            <li><a href="Menu2">Menu2</a></li>
+            <li><a href="Menu3">Menu3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 <script>
-    $(document).ready(function(){
-        $('.location button').on('click', function(){
-            //$(this).addClass('on');
-            $(this).toggleClass('on');
-            $(this).next('ul').stop().slideToggle();
-            $(this).parent('li').siblings('li').children('button').removeClass('on');
-            $(this).parent('li').siblings('li').children('ul').slideUp();
-        });
-
-        // $('.location button').on('mouseleave', function(){
-        //     $(this).removeClass('on');
-        //     $(this).next('ul').stop().slideToggle();
-        // });
+  $(document).ready(function(){
+    $('.location button').on('click', function(){
+      $(this).toggleClass('on');
+      $(this).next('ul').stop().slideToggle();
+      $(this).parent('li').siblings('li').children('button').removeClass('on');
+      $(this).parent('li').siblings('li').children('ul').slideUp();
     });
+  });
 </script>
 </html>

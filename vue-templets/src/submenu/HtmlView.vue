@@ -13,7 +13,6 @@
         <h4>TITLE</h4>
       </article>
     </section>
-
   </main>
 </template>
 
@@ -24,7 +23,5 @@ export default {
 </script>
 
 <style lang="scss">
-  html{
-    // 지우지 마세요.
-  }
+  html{}
 </style>

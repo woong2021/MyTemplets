@@ -1,76 +1,76 @@
 <section id="gnbHorizontal">
-    <h1><a href="" title="Logo">{ What to do!? } </a></h1>
-    <h2 class="hide">메뉴</h2>
-    <nav>
-        <ul class="gnb-horizontal">
-            <li>
-                <a href="">Memu 1</a>
-                <ul>
-                    <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
-                    <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
-                    <li><a href="" title="Sub Menu3">Sub Menu3</a></li>
-                    <li><a href="" title="Sub Menu4">Sub Menu4</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="">Memu 2</a>
-                <ul>
-                    <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
-                    <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="">Memu 3</a>
-                <ul>
-                    <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="">Memu 4</a>
-                <ul>
-                    <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
-                    <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
-                    <li><a href="" title="Sub Menu3">Sub Menu3</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="">Memu 5</a>
-                <ul>
-                    <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
-                    <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="">Memu 6</a>
-                <ul>
-                    <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
-                    <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
-                </ul>
-            </li>
+  <h1><a href="" title="Logo">{ What to do!? } </a></h1>
+  <h2 class="hide">메뉴</h2>
+  <nav>
+    <ul class="gnb-horizontal">
+      <li>
+        <a href="">Memu 1</a>
+        <ul>
+          <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
+          <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
+          <li><a href="" title="Sub Menu3">Sub Menu3</a></li>
+          <li><a href="" title="Sub Menu4">Sub Menu4</a></li>
         </ul>
-    </nav>
-    <a href="" class="member" title="My Page"><span class="hide">My Page</span></a>
+      </li>
+      <li>
+        <a href="">Memu 2</a>
+        <ul>
+          <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
+          <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Memu 3</a>
+        <ul>
+          <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Memu 4</a>
+        <ul>
+          <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
+          <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
+          <li><a href="" title="Sub Menu3">Sub Menu3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Memu 5</a>
+        <ul>
+          <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
+          <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Memu 6</a>
+        <ul>
+          <li><a href="" title="Sub Menu1">Sub Menu1</a></li>
+          <li><a href="" title="Sub Menu2">Sub Menu2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <a href="" class="member" title="My Page"><span class="hide">My Page</span></a>
 </section>
 <div class="bg_gnb"></div>
 <script>
-        // 하위메뉴 가로형
-        $('.gnb-horizontal li').on('mouseover focusin', function(){
-        $(this).children('ul').stop().fadeIn(300);
-    });
+  // 하위메뉴 가로형
+  $('.gnb-horizontal li').on('mouseover focusin', function(){
+    $(this).children('ul').stop().fadeIn(300);
+  });
 
-    $('.gnb-horizontal li').on('mouseleave', function(){
-        $(this).children('ul').stop().fadeOut(200);
-    });
+  $('.gnb-horizontal li').on('mouseleave', function(){
+    $(this).children('ul').stop().fadeOut(200);
+  });
 
-    $('.gnb-horizontal').on('mouseover focusin', function(){
-        $('.bg_gnb').stop().fadeIn(300);
-    });
+  $('.gnb-horizontal').on('mouseover focusin', function(){
+    $('.bg_gnb').stop().fadeIn(300);
+  });
 
-    $('.gnb-horizontal').on('mouseleave', function(){
-        $('.bg_gnb').stop().fadeOut(200);
-    });
+  $('.gnb-horizontal').on('mouseleave', function(){
+    $('.bg_gnb').stop().fadeOut(200);
+  });
 
-    $('.gnb-horizontal > li').on('focusout', function(){
-        $(this).children('ul').stop().fadeOut(200);
-    });
+  $('.gnb-horizontal > li').on('focusout', function(){
+    $(this).children('ul').stop().fadeOut(200);
+  });
 </script>
