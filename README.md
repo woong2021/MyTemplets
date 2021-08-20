@@ -43,6 +43,8 @@
 
 [VUE.js 가이드라인](https://vuejs.org/v2/style-guide/)
 
+- vuex 설치 : npm i vuex
+
 ### API
 
 [해커뉴스 API](https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md)
@@ -127,8 +129,11 @@
 
 ```
 - [공통] 공백(들여쓰기) 4에서 2로 변경
-- [vue-research] vue.js 라우터 기능 
+- [vue-research] vue.js 라우터 기능
 - [vue-research] axios를 이용한 API 호출
+- [vue-research] Vuex 설치
 - [vue-templets] "header" UI 수정
 - [vue-templets] "chartView.vue" 신규 생성
 ```
+
+
