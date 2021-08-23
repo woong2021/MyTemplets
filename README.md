@@ -45,6 +45,8 @@
 
 - vuex 설치 : npm i vuex
 
+[Vue.js 트랜지션 관련](https://vuejs.org/v2/guide/transitions.html)
+
 ### API
 
 [해커뉴스 API](https://github.com/tastejs/hacker-news-pwas/blob/master/docs/api.md)
@@ -136,4 +138,8 @@
 - [vue-templets] "chartView.vue" 신규 생성
 ```
 
-
+#### 2021.08.23
+```
+- [vue-research] 동적 라우트 매칭원리
+- [vue-research] 라우터 Params을 이용한 상세페이지 구현
+- [vue-research] v-html 디렉티브 사용법
