@@ -143,3 +143,9 @@
 - [vue-research] 동적 라우트 매칭원리
 - [vue-research] 라우터 Params을 이용한 상세페이지 구현
 - [vue-research] v-html 디렉티브 사용법
+```
+
+#### 2021.08.23
+```
+- [vue-templets] 일부 파일 초기화
+```

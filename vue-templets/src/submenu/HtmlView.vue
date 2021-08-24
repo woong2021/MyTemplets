@@ -13,13 +13,27 @@
         <h4>TITLE</h4>
       </article>
     </section>
+    <section v-for="sample in test">
+      {{ sample.age }}
+    </section>
   </main>
 </template>
 
 <script>
-export default {
+// 내부 API
+import test from '../assets/json/sample.json';
 
+export default {
+  data() {
+    return{
+      test
+    }
+  },
+  created() {
+    this.$store.dispatch('FETCH_NEWS');
+  }
 }
+
 </script>
 
 <style lang="scss">

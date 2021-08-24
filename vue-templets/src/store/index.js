@@ -1,12 +1,22 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import { fetchNewsList } from '../api/index.js';
 
-//플러그 형태로 제공
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
-  // state,
-  // getters,
-  // mutations,
-  // actions,
+  state: {
+    html: []
+  },
+  actions: {
+      fetch_news() {
+        fetchNewsList()
+          .then(response => {
+            console.log(response);
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
+  }
 });
