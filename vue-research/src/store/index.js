@@ -6,6 +6,7 @@ import actions from './actions.js';
 //플러그 형태로 제공
 Vue.use(Vuex);
 
+//  Vuex : 상태관리 도구
 export const store = new Vuex.Store({
   // state,
   // getters,
