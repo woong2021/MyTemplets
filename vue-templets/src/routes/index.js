@@ -6,6 +6,7 @@ import GitView from '../submenu/GitView.vue';
 import JqueryView from '../submenu/JqueryView.vue';
 import VueView from '../submenu/VueView.vue';
 import ChartView from '../submenu/ChartView.vue';
+import GuideView from '../lnbmenu/htmlview/GuideLine.vue';
 
 Vue.use(VueRouter);
 
@@ -40,6 +41,10 @@ export const router = new VueRouter({
     {
       path: '/vue',
       component: VueView,
+    },
+    {
+      path: '/guide',
+      component: GuideView,
     }
   ]
 });

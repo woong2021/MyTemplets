@@ -11,7 +11,9 @@ module.exports = {
           @import "@/assets/sass/components/_common.scss";
 
           @import "@/assets/sass/layout/_header.scss";
+          @import "@/assets/sass/layout/_lnb.scss";
           @import "@/assets/sass/layout/_contents.scss";
+          @import "@/assets/sass/layout/_footer.scss";
         `
       }
     }

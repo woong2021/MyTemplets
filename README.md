@@ -139,6 +139,7 @@
 ```
 
 #### 2021.08.23
+
 ```
 - [vue-research] 동적 라우트 매칭원리
 - [vue-research] 라우터 Params을 이용한 상세페이지 구현
@@ -147,6 +148,17 @@
 ```
 
 #### 2021.08.26
+
 ```
 - [공통] 불필요한 "README.md' 파일 삭제 (1개만 남김)
 - [Vue-CDN] 프로젝트 신규 생성 (CDN 방식)
+```
+
+#### 2021.08.30
+
+```
+- [vue-templets] "footerArea.vue" 와 sass 추가
+- [vue-templets] "footerArea.vue" UI 수정
+- [vue-templets] "submenu" UI 수정 (좌측메뉴 추가)
+- [vue-templets] "lnbmenu" 트리구조 변경 및 ui 작업(HTML5 메뉴)
+```
