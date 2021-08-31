@@ -162,3 +162,13 @@
 - [vue-templets] "submenu" UI 수정 (좌측메뉴 추가)
 - [vue-templets] "lnbmenu" 트리구조 변경 및 ui 작업(HTML5 메뉴)
 ```
+
+#### 2021.08.31
+
+```
+- [vue-templets] "content" 부분 간격 일부 수정
+- [vue-templets] "lnb" 메뉴 삭제후 조치
+- [vue-templets] "h태그" 간격 조정 및 "kbd" css 작업 진행
+- [vue-templets] " HTML5&CSS53 " 가이드라인 페이지 컨텐츠 추가
+- [vue-templets] "_table.scss" 추가
+```

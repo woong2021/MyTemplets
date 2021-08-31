@@ -4,5 +4,14 @@
 // ----------------------------*
 
 main{
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
+}
+
+.explanation{
+  padding: 15px 10px;
+  border: 1px solid;
+  width: 100%;
+  font-size: .8rem;
+  box-sizing: border-box;
 }

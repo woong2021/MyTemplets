@@ -9,6 +9,7 @@ module.exports = {
           @import "@/assets/sass/base/_variablesList.scss";
           
           @import "@/assets/sass/components/_common.scss";
+          @import "@/assets/sass/components/_table.scss";
 
           @import "@/assets/sass/layout/_header.scss";
           @import "@/assets/sass/layout/_lnb.scss";

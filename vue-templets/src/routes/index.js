@@ -1,12 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HtmlView from '../submenu/HtmlView.vue';
-import SassView from '../submenu/SassView.vue';
-import GitView from '../submenu/GitView.vue';
-import JqueryView from '../submenu/JqueryView.vue';
-import VueView from '../submenu/VueView.vue';
-import ChartView from '../submenu/ChartView.vue';
-import GuideView from '../lnbmenu/htmlview/GuideLine.vue';
+import HtmlView from '../submenu/html/HtmlView.vue';
+import GuideView from '../submenu/html/GuideLine.vue';
+import SassView from '../submenu/sass/SassView.vue';
+import GitView from '../submenu/git/GitView.vue';
+import JqueryView from '../submenu/jquery/JqueryView.vue';
+import VueView from '../submenu/vue/VueView.vue';
+import ChartView from '../submenu/chart/ChartView.vue';
+
 
 Vue.use(VueRouter);
 

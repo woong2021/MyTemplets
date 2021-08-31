@@ -3,7 +3,7 @@
 // ----------------------------*
 
 html {font-size: 16px;}
-body {font-size: 1rem;overflow-x: hidden;}
+body {font-size: 1rem; overflow-x: hidden;}
 
 main {
   margin: 0 auto;
@@ -14,16 +14,17 @@ main {
 
     section{
       &:last-child{
-        width: 82%;
+        width: 100%;
       }
     }
   }
 }
 
 #lnb{
-  width: 200px;
-  border: 1px solid;
   margin-right: 20px;
+  border: 1px solid;
+  width: 200px;
+  height: 310px;
 }
 
 h1{
@@ -45,6 +46,7 @@ h2{
 }
 
 h3{
+  margin-top: 30px;
   margin-bottom: 10px;
   color: $bgBlue;
 
@@ -52,14 +54,20 @@ h3{
     size: 1.2rem;
     weight: 600;
   }
+
+  &.title{
+    margin-top: 0;
+  }
 }
 
 h4{
   position: relative;
-  left: 15px;
+  margin: 20px 0;
+  left: 10px;
 
   font : {
     size: .8rem;
+    weight: 600;
   }
 
   &:before{
@@ -67,7 +75,7 @@ h4{
     position: absolute;
     background: #ffa500;
     top: 0;
-    left: -15px;
+    left: -10px;
     width: 5px;
     height: 16px;
   }
@@ -84,5 +92,26 @@ p{
   padding: 10px;
   border: 1px solid $red;
   background-color: $notice;
+}
+
+.red{
+  color: $red; 
+}
+
+kbd {
+  padding: 3px 5px;
+  border: 1px solid #aaa;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  background-color: #fcfcfc;
+  color: #333;
+
+  font : {
+    family: monospace;
+    size: .8rem;
+  }
+
+  line-height: 20px;
+  box-shadow: 2px 1px #999;
 }
 
