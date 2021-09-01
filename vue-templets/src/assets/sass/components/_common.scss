@@ -24,7 +24,7 @@ main {
   margin-right: 20px;
   border: 1px solid;
   width: 200px;
-  height: 310px;
+  height: 350px;
 }
 
 h1{
@@ -85,6 +85,7 @@ p{
   font : {
     size: .8rem;
   }
+  line-height: 1.5;
 }
 
 .notice{
@@ -113,5 +114,21 @@ kbd {
 
   line-height: 20px;
   box-shadow: 2px 1px #999;
+}
+
+.colorscripter-code{
+  border-radius: 8px;
+
+  .colorscripter-code-table{
+    tr{
+      td{
+        padding: 15px 5px !important;
+      }
+    }
+  }
+
+  + p {
+    margin-top: 10px;
+  }
 }
 

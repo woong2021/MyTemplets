@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import HtmlView from '../submenu/html/HtmlView.vue';
 import GuideView from '../submenu/html/GuideLine.vue';
-import SassView from '../submenu/sass/SassView.vue';
+import SassView from '../submenu/html/SassView.vue';
 import GitView from '../submenu/git/GitView.vue';
 import JqueryView from '../submenu/jquery/JqueryView.vue';
 import VueView from '../submenu/vue/VueView.vue';

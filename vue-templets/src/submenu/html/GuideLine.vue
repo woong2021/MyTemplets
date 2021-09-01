@@ -5,10 +5,11 @@
       <section id="lnb">
         <p>HTML5 &#38; CSS</p>
         <ul>
-          <li class="active"><router-link to="/GuideView" class="active">가이드라인</router-link></li>
-          <li><router-link to="/html">HTML5</router-link></li>
-          <li><router-link to="">CSS3</router-link></li>
-          <li><router-link to="">활용</router-link></li>
+          <li class="active"><router-link to="/Guide" class="active" title="가이드라인">가이드라인</router-link></li>
+          <li><router-link to="/html" title="html">HTML5</router-link></li>
+          <li><router-link to="" title="css3">CSS3</router-link></li>
+          <li><router-link to="/sass" title="sass">SASS</router-link></li>
+          <li><router-link to="" title="활용">활용</router-link></li>
         </ul>    
       </section>
       <section>
@@ -68,14 +69,24 @@
             </section>
         </article>
         <article>
-          <h3>HTML 표기법</h3>
+          <h3>HTML 표기</h3>
           <table class="default-table">
-            <caption class="sr-only">HTML 표기법 설명</caption>
+            <caption class="sr-only">HTML 표기 설명</caption>
             <colgroup>
               <col style="width: 25%" />
               <col style="width: 75%" />
             </colgroup> 
             <tbody>
+              <tr>
+                <th>&lt; a &gt; 태그</th>
+                <td>
+                  <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:100%"><div style="padding:0 6px; white-space:pre; line-height:100%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">a</span>&nbsp;<span style="color:#a8ff58">href</span>=<span style="color:#ffd500">"http://naver.com"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">target</span>=<span style="color:#ffd500">"_blank"</span><span style="color:#a8ff58"></span>&nbsp;<span style="color:#a8ff58">title</span>=<span style="color:#ffd500">"바로가기&nbsp;샘플"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span>바로가기&nbsp;샘플<span style="color:#f0f0f0">&lt;</span><span style="color:#f0f0f0">/</span><span style="color:#ff3399">a</span><span style="color:#f0f0f0">&gt;</span></div></div></td></tr></table></div>
+                </td>
+              </tr>
+              <tr>
+                <th> &lt; br &gt; 태그</th>
+                <td>&lt;br&gt;태그는 사용을 자제 (<span class="red">반응형에 취약</span>)</td>
+              </tr>
               <tr>
                 <th scope="row">Id 속성</th>
                 <td>
@@ -89,10 +100,6 @@
                   <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:100%"><div style="padding:0 6px; white-space:pre; line-height:100%"><span style="color:#f0f0f0">&lt;</span><span style="color:#ff3399">div</span>&nbsp;<span style="color:#a8ff58">class</span>=<span style="color:#ffd500">"default-table"</span><span style="color:#a8ff58"></span><span style="color:#f0f0f0">&gt;</span></div></div></td></tr></table></div>
                   <p>단어연결시 대쉬 사용</p>
                 </td>
-              </tr>
-              <tr>
-                <th> &lt; br &gt; 태그</th>
-                <td>&lt;br&gt;태그는 사용을 자제 (<span class="red">반응형에 취약</span>)</td>
               </tr>
             </tbody>
           </table>

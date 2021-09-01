@@ -171,4 +171,15 @@
 - [vue-templets] "h태그" 간격 조정 및 "kbd" css 작업 진행
 - [vue-templets] " HTML5&CSS53 " 가이드라인 페이지 컨텐츠 추가
 - [vue-templets] "_table.scss" 추가
+- [vue-templets] a태그 title 추가
+- [Vue-CDN] "vueRouter" 설치 및 이해
+```
+
+#### 2021.09.01
+
+```
+- [vue-templets] "VueView" 내용 추가
+- [vue-templets] "HtmlView" HTML 표기 내용 추가
+- [vue-templets] "GNB 영역" 수정 및 "SASS" 위치 변경
+- [vue-templets] 웹 접근성 고려 hide 클래스 추가 (대기)
 ```

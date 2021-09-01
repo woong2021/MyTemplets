@@ -3,7 +3,6 @@
     <h1>What to do!?</h1>
     <nav class="header">
       <router-link to="/html">HTML5</router-link>
-      <router-link to="/sass">SASS</router-link>
       <router-link to="/git">Git</router-link>
       <router-link to="/jquery">Jquery</router-link>
       <router-link to="/vue">Vue</router-link>
@@ -16,6 +15,8 @@
   }
 
   .header a {
+    text-align: right;
+    width: 150px;
     color: white;
   }
 </style>
