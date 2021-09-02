@@ -20,13 +20,6 @@ main {
   }
 }
 
-#lnb{
-  margin-right: 20px;
-  border: 1px solid;
-  width: 200px;
-  height: 350px;
-}
-
 h1{
   font : {
     style: italic;
@@ -81,11 +74,18 @@ h4{
   }
 }
 
-p{
+h5{
   font : {
     size: .8rem;
+    weight: 600;
   }
-  line-height: 1.5;
+}
+
+p{
+  font : {
+    size: .9rem;
+  }
+  line-height: 1.7;
 }
 
 .notice{
@@ -117,6 +117,7 @@ kbd {
 }
 
 .colorscripter-code{
+  margin-top: 10px;
   border-radius: 8px;
 
   .colorscripter-code-table{

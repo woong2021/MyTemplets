@@ -41,6 +41,7 @@
 
 ### 필요정보
 
+[Vue.js 참고문헌](https://joshua1988.github.io/vue-camp/textbook.html)
 [VUE.js 가이드라인](https://vuejs.org/v2/style-guide/)
 
 - vuex 설치 : npm i vuex
@@ -181,5 +182,20 @@
 - [vue-templets] "VueView" 내용 추가
 - [vue-templets] "HtmlView" HTML 표기 내용 추가
 - [vue-templets] "GNB 영역" 수정 및 "SASS" 위치 변경
+- [vue-templets] "GNB 영역" vue만 활성화
+- [vue-templets] content 영역에 id 값 부여
+- [vue-templets] content 마크업 재수정 (defalut: VueView.vue)
+- [vue-templets] "VueView.vue" 세분화 작업 진행
+- [vue-templets] 세분화 작업으로 인하여 "LNB"영역과 "Footer"영역 수정
+```
+
+#### 2021.09.02
+
+```
+- [vue-templets] "LNB" 구성 임시로 교체 및 디렉토리 수정
+- [vue-templets] "VueRouter.vue" 페이지 분리 및 내용추가
+- [vue-templets] "VueAxios.vue" 페이지 분리 및 내용추가
+- [vue-templets] "VueTemplate.vue" 내용추가
+- [vue-templets] "practice.vue" 신규 페이지 생성
 - [vue-templets] 웹 접근성 고려 hide 클래스 추가 (대기)
 ```

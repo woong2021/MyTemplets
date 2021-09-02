@@ -4,6 +4,10 @@
 // ----------------------------*
 
 #lnb{
+  margin-right: 20px;
+  width: 200px;
+  height: 350px;
+  
   > p{
     
     background-color: #0D3459;
@@ -13,27 +17,49 @@
     font-size: 1.2rem;
     line-height: 100px;
   }
-
-  ul{
-    li{
-      margin-top: 5px;
-      background-color: #f6f6f6;
-      height: 45px;
-      text-align: center;
-      font-size: 1rem;
-      line-height: 45px;
-      
-      &:hover,
-      &.active{
-        background-color: $bgBlue;
-      }
-
-      a{
-        display: block;
-
-        &:hover,
-        &.active{
+  > nav{
+    ul{
+      li{
+        margin-top: 5px;
+        background-color: #f6f6f6;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 45px;
+        
+        a{
+          background-color: $bgBlue;
+          display: block;
+          height: 45px;
           color: $white;
+
+          &:hover{
+            background-color: $bgBlue;
+            color: $white;
+            font-weight: 600;
+          }
+        }
+  
+        > ul{
+          > li{
+            border:1px solid;
+  
+            &:hover{
+              background-color: lighten($bgBlue, 10%);
+            }
+  
+            > a{
+              display: block;
+              background-color: $white;
+              color:$bgBlue;
+              font-weight: 400;  
+
+              &.on{
+                background-color: lighten($bgBlue, 10%);
+                color: white;
+                font-weight: 600;
+              }
+            }
+          }
         }
       }
     }

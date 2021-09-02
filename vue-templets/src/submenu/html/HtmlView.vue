@@ -12,7 +12,7 @@
           <li><router-link to="" title="활용">활용</router-link></li>
         </ul>      
       </section>
-      <section>
+      <section id="content">
         <article>
           <h3 class="title">HTML 이란 !? </h3>
           <p class="notice">

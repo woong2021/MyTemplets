@@ -5,6 +5,7 @@
 
 footer{
   position: relative;
+  margin-top: 50px;
   border: 1px solid;
   background-color: #42b883; 
   width: 100%;
@@ -35,6 +36,10 @@ footer{
           text-align: center;
           box-sizing: border-box;
         }
+      }
+
+      &:last-child{
+        text-align: center;
       }
     }
   }

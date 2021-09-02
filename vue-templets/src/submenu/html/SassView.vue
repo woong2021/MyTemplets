@@ -12,7 +12,7 @@
           <li><router-link to="" title="활용">활용</router-link></li>
         </ul>      
       </section>
-      <section>
+      <section id="content"> 
         <article>
           <h3 class="title">SASS 란 무엇인가! </h3>
 

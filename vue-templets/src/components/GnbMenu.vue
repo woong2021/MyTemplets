@@ -1,12 +1,14 @@
 <template>
   <header>
     <h1>What to do!?</h1>
-    <nav class="header">
+    <!--
+      <nav class="header">
       <router-link to="/html">HTML5</router-link>
       <router-link to="/git">Git</router-link>
       <router-link to="/jquery">Jquery</router-link>
       <router-link to="/vue">Vue</router-link>
-    </nav>
+    </nav> 
+    -->
   </header>
 </template>
 <style scoped> 

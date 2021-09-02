@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <gnb-menu></gnb-menu>
-    <lnb-menu></lnb-menu>
     <router-view></router-view>
     <footer-area></footer-area>
   </div>
