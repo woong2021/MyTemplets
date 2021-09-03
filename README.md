@@ -102,15 +102,6 @@
 
 ```
 
-#### 2021.08.17 (화성)
-
-```
-- [공통] 반응형 작업
-- [GNB] thema4 화성시에 맞게 색 변경
-- [GNB] thema5 추가
-- [LNB] thema5 추가
-```
-
 #### 2021.08.18
 
 ```
@@ -198,4 +189,12 @@
 - [vue-templets] "VueTemplate.vue" 내용추가
 - [vue-templets] "practice.vue" 신규 페이지 생성
 - [vue-templets] 웹 접근성 고려 hide 클래스 추가 (대기)
+```
+
+#### 2021.09.03
+
+```
+- [vue-templets] "VueTemplate.vue" 내용추가 (디렉티브:v-on)
+- [vue-templets] "VueTemplate.vue" 내용추가 (watch)
+- [vue-templets] "VueTemplate.vue" 내용추가 (computed)
 ```
