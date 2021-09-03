@@ -7,7 +7,7 @@
         <nav>
           <ul>
             <!-- <li @click="toggle" :class="{on : isActive}"> -->
-            <li @click="toggle" :class="{on : isActive}">
+            <li v-on:click="toggle" :class="{on : isActive}">
               <router-link to="/vue"  title="Fundamentals(beginner)">Vue.js (beginner)</router-link>
               <!-- <ul v-if="show"> -->
               <ul>
@@ -18,7 +18,7 @@
                 <li><router-link to="/Vueaxios" title="HTTP 통신 라이브러리">axios</router-link></li>
               </ul>
             </li>
-             <li @click="toggle" :class="{on : isActive}">
+             <li v-on:click="toggle" :class="{on : isActive}">
               <router-link to="" title="Fundamentals (Middle class)">Vue.js (Middle class)</router-link>
               <ul>
                 <li><router-link to="/VueCLI" title="VuE CLI">VuE CLI</router-link></li>

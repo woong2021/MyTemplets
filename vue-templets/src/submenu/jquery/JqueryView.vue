@@ -2,7 +2,7 @@
   <main>
     <h2> Jquery (&#38; javascript) </h2>
     <section id="container">
-      <section id="lnb">
+      <!-- <section id="lnb">
         <p>Jquery</p>
         <ul>
           <li class="active"><router-link to="/jquery" class="active" title="자바스크립트 기본">자바스크립트 기본</router-link></li>
@@ -28,6 +28,9 @@
               <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px 0;text-align:left"><pre style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:100%"><div style="padding:0 6px; white-space:pre; line-height:100%"><span style="color:#ff3399">var</span>&nbsp;a</div><div style="padding:0 6px; white-space:pre; line-height:100%">a&nbsp;<span style="color:#aaffaa"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#c10aff">10</span>;</div></pre></td></tr></table></div>
             </article>
           </section>
+        </article> -->
+        <article class="getting-ready">
+          준비중
         </article>
       </section>
     </section>
