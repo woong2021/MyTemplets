@@ -7,7 +7,7 @@
         <nav>
           <ul>
             <!-- <li @click="toggle" :class="{on : isActive}"> -->
-            <li>
+            <li v-on:click="toggle" :class="{on : isActive}">
               <router-link to="/vue"  title="Fundamentals(beginner)">Vue.js (beginner)</router-link>
               <!-- <ul v-if="show"> -->
               <ul>
@@ -18,10 +18,11 @@
                 <li><router-link to="/Vueaxios" title="HTTP 통신 라이브러리">axios</router-link></li>
               </ul>
             </li>
-             <li>
+             <li v-on:click="toggle" :class="{on : isActive}">
               <router-link to="" title="Fundamentals (Middle class)">Vue.js (Middle class)</router-link>
               <ul>
-                <li><router-link to="/VueCLI" title="VuE CLI">VuE CLI</router-link></li>
+                <li><router-link to="/vueCLI" title="VuE CLI">Vue CLI</router-link></li>
+                <li><router-link to="/singleFile" title="Single-file Component">Single-File Component</router-link></li>
               </ul>
             </li>
             <li><router-link to="" title="고급">고급</router-link></li>
@@ -36,7 +37,7 @@
             웹 개발을 단순화하고 정리하기 위해 개발된 대중적인 자바스크립트 프론트엔드 프레임워크
           </p>
         </article>
-                <article>
+        <article>
           <h3>Vue Template</h3>
           <p>
             뷰의 템플릿 문법이란 뷰로 화면을 조작하는 방법을 의미, 템플릿 문법은 크게 데이터 바인딩과 디렉티브로 나뉨

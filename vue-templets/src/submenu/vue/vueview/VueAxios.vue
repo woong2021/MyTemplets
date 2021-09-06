@@ -4,10 +4,10 @@
     <section id="container">
       <section id="lnb">
         <p>Vue.js</p>
-                <nav>
+        <nav>
           <ul>
             <!-- <li @click="toggle" :class="{on : isActive}"> -->
-            <li>
+            <li v-on:click="toggle" :class="{on : isActive}">
               <router-link to="/vue"  title="Fundamentals(beginner)">Vue.js (beginner)</router-link>
               <!-- <ul v-if="show"> -->
               <ul>
@@ -18,10 +18,11 @@
                 <li><router-link to="/Vueaxios" title="HTTP 통신 라이브러리">axios</router-link></li>
               </ul>
             </li>
-             <li>
+             <li v-on:click="toggle" :class="{on : isActive}">
               <router-link to="" title="Fundamentals (Middle class)">Vue.js (Middle class)</router-link>
               <ul>
-                <li><router-link to="/VueCLI" title="VuE CLI">VuE CLI</router-link></li>
+                <li><router-link to="/vueCLI" title="VuE CLI">Vue CLI</router-link></li>
+                <li><router-link to="/singleFile" title="Single-file Component">Single-File Component</router-link></li>
               </ul>
             </li>
             <li><router-link to="" title="고급">고급</router-link></li>

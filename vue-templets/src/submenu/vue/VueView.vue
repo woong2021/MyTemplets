@@ -21,13 +21,14 @@
              <li v-on:click="toggle" :class="{on : isActive}">
               <router-link to="" title="Fundamentals (Middle class)">Vue.js (Middle class)</router-link>
               <ul>
-                <li><router-link to="/VueCLI" title="VuE CLI">VuE CLI</router-link></li>
+                <li><router-link to="/vueCLI" title="VuE CLI">Vue CLI</router-link></li>
+                <li><router-link to="/singleFile" title="Single-file Component">Single-File Component</router-link></li>
               </ul>
             </li>
             <li><router-link to="" title="고급">고급</router-link></li>
             <li><router-link to="/practice" title="실전">실전</router-link></li>  
           </ul>
-        </nav>    
+        </nav>
       </section>
       <section id="content">
         <article>

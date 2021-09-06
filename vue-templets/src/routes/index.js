@@ -14,6 +14,11 @@ import VueComponents from '../submenu/vue/vueview/VueComponents.vue';
 import VueRouterView from '../submenu/vue/vueview/VueRouter.vue';
 import VueAxios from '../submenu/vue/vueview/VueAxios.vue';
 
+// VUE CLI
+import VueCLI from '../submenu/vue/VueCLI.vue';
+import VueCliSub from '../submenu/vue/viewCLI/VueCLI.vue';
+import VueSinglefile from '../submenu/vue/viewCLI/SingleComponent.vue';
+
 import ChartView from '../submenu/chart/ChartView.vue';
 
 import Vuepractice from '../submenu/vue/practice.vue';
@@ -83,6 +88,20 @@ export const router = new VueRouter({
     {
       path: '/guide',
       component: GuideView,
+    },
+
+    //Vue CLI
+    {
+      path: '/vueCLI',
+      component: VueCLI,
+    },
+    {
+      path: '/VueCliSub',
+      component: VueCliSub,
+    },
+    {
+      path: '/singleFile',
+      component: VueSinglefile,
     }
   ]
 });

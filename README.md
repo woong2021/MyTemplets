@@ -198,3 +198,12 @@
 - [vue-templets] "VueTemplate.vue" 내용추가 (watch)
 - [vue-templets] "VueTemplate.vue" 내용추가 (computed)
 ```
+
+#### 2021.09.06
+
+```
+- [vue-templets] LNB메뉴 업데이트
+- [vue-templets] 메뉴 "Vue CLI" 에 컨텐츠 추가
+- [vue-templets] 메뉴 "single-File Component" 에 컨텐츠 추가
+
+```
