@@ -133,3 +133,37 @@ kbd {
   }
 }
 
+.place-hide{
+	&:focus {
+		&::-webkit-input-placeholder{
+			color: transparent
+		}
+		&::-moz-placeholder{
+			color: transparent
+		}
+		
+		&::-ms-input-placeholder{
+			color: transparent
+		}
+		
+		&::-ms-input-placeholder{
+			color: transparent
+		}
+	}
+}
+
+#tree{
+  ul{
+    li{
+      input[type="checkbox"]{
+        &:checked~ul{
+          display: none;
+        }
+      }
+
+      > ul {
+        margin-left: 20px;
+      }
+    }
+  }
+}

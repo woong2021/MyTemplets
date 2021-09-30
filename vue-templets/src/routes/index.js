@@ -18,6 +18,7 @@ import VueAxios from '../submenu/vue/vueview/VueAxios.vue';
 import VueCLI from '../submenu/vue/VueCLI.vue';
 import VueCliSub from '../submenu/vue/viewCLI/VueCLI.vue';
 import VueSinglefile from '../submenu/vue/viewCLI/SingleComponent.vue';
+import TabMenu from '../submenu/vue/viewCLI/TabMenu.vue';
 
 import ChartView from '../submenu/chart/ChartView.vue';
 
@@ -88,6 +89,11 @@ export const router = new VueRouter({
     {
       path: '/guide',
       component: GuideView,
+    },
+
+    {
+      path: '/tabmenu',
+      component: TabMenu,
     },
 
     //Vue CLI
